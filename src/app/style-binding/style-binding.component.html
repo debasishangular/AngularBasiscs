@@ -1,0 +1,18 @@
+<p>
+  style-binding works!
+</p>
+<p [style.color] = "result > 30 ? 'blue' : 'green'"> Hello Color World! </p>
+<p bind-style.color = "result > 30 ? 'blue' : 'green'"> Hello Color World! </p>
+<p style.color = "{{result > 30 ? 'blue' : 'green'}}"> Hello Color World! </p>
+<br/>
+<button 
+     [style.background-color] = "colorFlag ? 'cyan' : 'grey'"
+     [style.color] = "isRed(8) ? 'red' : 'black'" > Button </button>
+<br/><br/>
+<div [ngStyle]="allRequiredStyles('one')">
+	NgStyle Example
+</div>
+<br/><br/>
+<div bind-ngStyle="allRequiredStyles('two')">
+	NgStyle Example
+</div> 

@@ -1,0 +1,17 @@
+<p>
+  Property works!
+</p>
+
+Logo: <img [src]="website.logo"/>
+
+<br/>Url: <a bind-href="website.url" [textContent]="website.name"> </a>
+<br/> Url: <a href="http://www.google.com">Direct URL</a>
+<br/> Url: <a href="{{website.url}}">using interpolation</a>
+
+<p textContent="{{website.description}}"> </p><br/>
+
+<button [disabled]="flag">Submit</button>
+
+<p [ngClass]="'one two'"> Angular 2 Property Binding Example </p>
+
+<app-msg [siteName] = "website.name"> </app-msg> 

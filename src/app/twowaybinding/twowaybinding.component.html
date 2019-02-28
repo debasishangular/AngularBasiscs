@@ -1,0 +1,26 @@
+<p>
+  twoway binding works!
+</p>
+
+<p [style.color] = "'green'">2way binding with ngModel</p>
+<input type="text" [(ngModel)]="data">
+
+<input type="text" [(ngModel)]="data">
+
+value :- {{data}}
+
+<p [ngStyle]="{'color':'red'}">2way binding without using ngModel</p>
+
+<input type="text" [value]="secondData" (input)="secondData=$event.target.value">
+
+<input type="text" [value]="secondData" (input)="secondData=$event.target.value">
+
+value :- {{secondData}}
+
+<p [ngStyle]="{'color':'red'}">How ngModel works</p>
+
+<input type="text" [ngModel]="thirdData" (ngModelChange)="thirdData=$event">
+
+<input type="text"[ngModel]="thirdData" (ngModelChange)="thirdData=$event">
+
+value :- {{thirdData}}
