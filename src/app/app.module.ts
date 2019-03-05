@@ -13,6 +13,18 @@ import { CssClassBindingComponent } from './css-class-binding/css-class-binding.
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 
 import { FormsModule } from '@angular/forms';
+import { DecoratorComponent } from './decorator/decorator.component';
+import { ParentComponent } from './decorator/parent/parent.component';
+import { ChildOneComponent } from './decorator/child/child.component';
+import { ContentChildComponent } from './content-child/content-child.component';
+
+import { CityComponent } from './content-child/city/city.component';
+import { AddressComponent } from './content-child/address/address.component';
+import { FriendComponent } from './content-child/friend/friend.component';
+import { DirectiveComponent } from './directive/directive.component';
+import { UserComponent } from './directive/user/user.component';
+
+
 
 @NgModule({
   declarations: [
@@ -24,7 +36,17 @@ import { FormsModule } from '@angular/forms';
     EventComponent,
     StyleBindingComponent,
     CssClassBindingComponent,
-    TwowaybindingComponent
+    TwowaybindingComponent,
+    DecoratorComponent,
+    ParentComponent,
+    ChildOneComponent,
+    ContentChildComponent,
+    CityComponent,
+    AddressComponent,
+    FriendComponent,
+    DirectiveComponent,
+    UserComponent,
+
   ],
   imports: [
     BrowserModule,

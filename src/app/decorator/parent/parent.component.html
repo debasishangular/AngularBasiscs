@@ -1,0 +1,24 @@
+<p>
+@Input and @output
+</p>
+
+<h1>{{parentTitle}}</h1>
+<button (click)="addStudent()">parent-Add Student</button>
+<br/> <button (click)="sendMsg()">parent-Send</button>
+
+<p #name>Name: {{stdFullName}}</p>				
+<p #message>Message: {{msg}}</p>	
+<input type="text" #text1/>
+
+<!-- <input type="text" [value]=text1> -->
+
+<p [style.color]="'red'">-----child component starts---</p>
+			<app-child-one
+				[ctMsg]="cityMsg" 				
+				[ctArray]="cityArray"	
+				[studentAddMsg]="stdAddMsg" 						
+				(addStudentEvent) = "saveData($event)"
+				(sendMsgEvent) = "printMsg($event)" >
+      </app-child-one>
+      
+      <p [style.color]="'red'">-----child component ends---</p>

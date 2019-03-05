@@ -1,0 +1,52 @@
+<b> *ngFor Demo</b>
+<ul>
+ <li *ngFor="let user of users; let i = index">
+  Row {{i}} : {{user.name}} - {{user.age}}
+ </li>
+</ul>
+
+<b>ngClass</b>
+<div *ngFor="let user of users" [ngClass]="'one two'">
+  {{user.name}}
+</div>  
+
+<b>ngClass with Array</b>
+<p [ngClass]="['one', 'two']">
+  Using NgClass with Array.
+  </p>  <br>
+
+  <b [style.color]="'red'">ngClass with Component Method</b>
+  <div [ngClass]="getCSSClasses('nightMode')">
+    Using NgClass with Component Method.
+   </div> <br>
+
+   <b [style.color]="'red'">ngSwitch</b>
+   <ul [ngSwitch]="person">
+    <li *ngSwitchCase="'Mohan'">Hello Mohan</li>
+    <li *ngSwitchCase="'Sohan'">Hello Sohan</li>
+    <li *ngSwitchCase="'Vijay'">Hello Vijay</li>
+    <li *ngSwitchDefault>Bye Bye</li>
+  </ul>
+
+  <div [ngSwitch]="myDir">
+    <b *ngSwitchCase="dirEnum.East"> East Direction</b>
+    <b *ngSwitchCase="dirEnum.West"> West Direction</b>
+    <b *ngSwitchCase="dirEnum.North">North Direction</b>
+    <b *ngSwitchCase="dirEnum.South">South Direction</b>
+    <b *ngSwitchDefault>No Direction</b>
+  </div><br>
+
+  <b [style.color]="'red'">*ngIf</b>
+
+  
+
+  <div *ngFor="let id of ids" >
+    Id is {{id}}
+    <div *ngIf="id%2 == 0">
+    <div [ngClass]="'one'">Even Number</div>
+    </div> 	
+    <div *ngIf="id%2 == 1">
+    <div [ngClass]="'two'">Odd Number</div>
+    </div> 	
+  </div>  
+  

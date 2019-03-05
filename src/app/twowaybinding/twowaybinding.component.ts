@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwowaybindingComponent implements OnInit {
 
-  data = 'TestValue';
+  data: String = 'TestValue';
 
   secondData = 'TestValue2';
 

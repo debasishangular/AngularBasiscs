@@ -1,0 +1,21 @@
+
+<h3 [style.color]="'red'">Content Child using component</h3>
+
+<app-address>
+  <span class="secondcity">
+      <app-city cityId="2" cityName="Noida" *ngIf="homeTown" ></app-city>
+  </span>
+  <span class="firstcity">
+  <app-city cityId="1" cityName="Varanasi" *ngIf="homeTown"></app-city>
+  </span>
+  <h1>Content projection using Tag</h1>
+  <span id="myId">Content Projection using ID</span>
+ 
+</app-address>
+
+<h3 [style.color]="'red'">Content Child using TemplateReference</h3>
+<app-friend>
+    <div #name *ngIf="bestFriend">Mahesh</div>
+   <div #name *ngIf="!bestFriend">Krishna</div>
+  </app-friend>
+  <br/><button (click)="onChangeFriend()">Change Friend</button>
