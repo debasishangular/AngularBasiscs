@@ -23,6 +23,11 @@ import { AddressComponent } from './content-child/address/address.component';
 import { FriendComponent } from './content-child/friend/friend.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { UserComponent } from './directive/user/user.component';
+import { MycolorDirective } from './directive/mycolor.directive';
+import { MouseactionDirective } from './directive/mouseaction.directive';
+import { DltIfDirective } from './directive/dlt-if.directive';
+import { DltForLoopDirective } from './directive/dlt-for-loop.directive';
+
 
 
 
@@ -46,6 +51,11 @@ import { UserComponent } from './directive/user/user.component';
     FriendComponent,
     DirectiveComponent,
     UserComponent,
+    MycolorDirective,
+    MouseactionDirective,
+    DltIfDirective,
+    DltForLoopDirective,
+
 
   ],
   imports: [
