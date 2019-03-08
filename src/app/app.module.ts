@@ -27,7 +27,12 @@ import { MycolorDirective } from './directive/mycolor.directive';
 import { MouseactionDirective } from './directive/mouseaction.directive';
 import { DltIfDirective } from './directive/dlt-if.directive';
 import { DltForLoopDirective } from './directive/dlt-for-loop.directive';
-
+import { PipesComponent } from './pipes/pipes.component';
+import { DivisionPipe } from './pipes/division.pipe';
+import { PurePipe } from './pipes/purepipe.pipe';
+import { ImpurePipe } from './pipes/impurepipe.pipe';
+import { CustomUppercasePipe } from './pipes/custom-uppercase.pipe';
+import { CounterComponent } from './counter/counter.component';
 
 
 
@@ -55,6 +60,13 @@ import { DltForLoopDirective } from './directive/dlt-for-loop.directive';
     MouseactionDirective,
     DltIfDirective,
     DltForLoopDirective,
+    PipesComponent,
+    DivisionPipe,
+    PurePipe,
+    ImpurePipe,
+    CustomUppercasePipe,
+    CounterComponent,
+
 
 
   ],

@@ -8,8 +8,8 @@ export class DltForLoopDirective {
     private templateRef: TemplateRef<any>,
     private viewContainer: ViewContainerRef
   ) {}
-  @Input('appDltForLoop') set loop(num: number) {
-    for (let i = 0; i < num; i++) {
+  @Input('appDltForLoop') set loop(num: Array<number>) {
+    for (let i = 0; i < num.length; i++) {
       this.viewContainer.createEmbeddedView(this.templateRef);
     }
   }
